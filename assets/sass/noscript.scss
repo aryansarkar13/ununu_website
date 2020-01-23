@@ -5,10 +5,10 @@
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
 
-/* Banner */
+/* hero */
 
 	body.is-preload {
-		#banner {
+		#hero {
 			h2 {
 				@include vendor('transform', 'none');
 				opacity: 1;
