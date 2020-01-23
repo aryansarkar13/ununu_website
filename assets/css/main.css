@@ -2485,15 +2485,15 @@ input, select, textarea {
 		}
 
 		.subsection:nth-child(1) {
-			background-color: rgba(0, 0, 10);
+			background-color: rgba(1, 0, 3);
 		}
 
 		.subsection:nth-child(2) {
-			background-color: rgba(0, 0, 5);
+			background-color: rgba(1, 0, 2.75);
 		}
 
 		.subsection:nth-child(3) {
-			background-color: rgba(0, 0, 10);
+			background-color: rgba(1, 0, 3);
 		}
 
 		.subsection:nth-child(4) {
@@ -2758,7 +2758,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease;
 		-ms-transition: background-color 0.2s ease;
 		transition: background-color 0.2s ease;
-		background: #2e3842;
+		background: #111416;
 		height: 3em;
 		left: 0;
 		line-height: 3em;
@@ -3022,9 +3022,7 @@ input, select, textarea {
 	}
 
 /* demo */
-    #demo {
-		background-image:url('demo_bg.jpg');
-	}
+
 	#demo .inner {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -3158,7 +3156,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 6em 0 4em 0 ;
+		padding: 1em 0 1em 0 ;
 		text-align: center;
 	}
 

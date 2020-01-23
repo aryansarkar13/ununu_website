@@ -1538,7 +1538,7 @@
 
 	#demo {
 		.inner {
-			@include vendor('display', 'flex');
+			@include vendor('background-image', 'images/demo_bg.jpg');
 			max-width: 45em;
 
 			header {
