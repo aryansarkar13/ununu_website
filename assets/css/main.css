@@ -2390,7 +2390,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ed4933;
+			background-color: #a3c4ca;
 			box-shadow: none !important;
 			color: #ffffff !important;
 		}
@@ -2400,7 +2400,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #ef5e4a !important;
+				background-color: #a2adaf !important;
 			}
 
 			input[type="submit"].primary:active,
@@ -2465,6 +2465,9 @@ input, select, textarea {
 				width: 100%;
 				height:100vh;
 				size:cover;
+				object-fit: cover;
+				opacity:0.6;
+				
 			}
 
 		.subsection .content {
@@ -2475,6 +2478,10 @@ input, select, textarea {
 			order: 2;
 			max-width: 48em;
 			width: 60%;
+		}
+		.subsection .content h2
+		{
+			color:#fadaba;
 		}
 
 		.subsection:nth-child(2n) {
@@ -2548,6 +2555,10 @@ input, select, textarea {
 
 				.subsection .image {
 					width: 100%;
+					height:50vh;
+				}
+				.subsection .image img{
+					height:50vh;
 				}
 
 				.subsection .content {
@@ -2555,6 +2566,7 @@ input, select, textarea {
 					max-width: none;
 					text-align: center;
 					width: 100%;
+					height:50vh;
 				}
 
 		}
@@ -2564,7 +2576,6 @@ input, select, textarea {
 			.subsection .content {
 				padding: 3em 2em 1em 2em ;
 			}
-
 		}
 		@media screen and (max-width: 460px) {
 
@@ -2574,6 +2585,24 @@ input, select, textarea {
 			.subsection .image img{
 				height:50vh;
 			}
+			.subsection .content{
+				height:80vh;
+			}
+			
+		}
+		.addtext {
+			position: relative;
+			text-align: center;
+			color: white;
+		  }
+		.centered {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			}
+		.centered h2{
+			font-size:3.0em;
 		}
 
 /* Wrapper */
@@ -2724,7 +2753,6 @@ input, select, textarea {
 			position: absolute;
 			right: 0;
 			top: 0;
-			vertical-align: middle;
 			width: 7em;
 		}
 
@@ -2758,7 +2786,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease;
 		-ms-transition: background-color 0.2s ease;
 		transition: background-color 0.2s ease;
-		background: #111416;
+		background: #92929a;
 		height: 3em;
 		left: 0;
 		line-height: 3em;
@@ -2951,6 +2979,51 @@ input, select, textarea {
 			text-transform: uppercase;
 			margin:0;
 		}
+		#hero .more {
+			-moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;
+			-webkit-transition: -webkit-transform 0.75s ease, opacity 0.75s ease;
+			-ms-transition: -ms-transform 0.75s ease, opacity 0.75s ease;
+			transition: transform 0.75s ease, opacity 0.75s ease;
+			-moz-transition-delay: 3.5s;
+			-webkit-transition-delay: 3.5s;
+			-ms-transition-delay: 3.5s;
+			transition-delay: 3.5s;
+			-moz-transform: translateY(0);
+			-webkit-transform: translateY(0);
+			-ms-transform: translateY(0);
+			transform: translateY(0);
+			border: none;
+			bottom: 0;
+			color: inherit;
+			font-size: 0.8em;
+			height: 8.5em;
+			left: 50%;
+			letter-spacing: 0.225em;
+			margin-left: -8.5em;
+			opacity: 1;
+			outline: 0;
+			padding-left: 0.225em;
+			position: absolute;
+			text-align: center;
+			text-transform: uppercase;
+			width: 16em;
+			z-index: 1;
+		}
+
+			#hero .more:after {
+				background-image: url("images/arrow.svg");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+				bottom: 4em;
+				content: '';
+				display: block;
+				height: 1.5em;
+				left: 50%;
+				margin: 0 0 0 -0.75em;
+				position: absolute;
+				width: 1.5em;
+			}
 
 		#hero:after {
 			pointer-events: none;
@@ -3253,7 +3326,15 @@ input, select, textarea {
 		background: none;
 	}
 
+	body.is-preload #hero .more {
+		-moz-transform: translateY(8.5em);
+		-webkit-transform: translateY(8.5em);
+		-ms-transform: translateY(8.5em);
+		transform: translateY(8.5em);
+		opacity: 0;
+	}
 
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+	
