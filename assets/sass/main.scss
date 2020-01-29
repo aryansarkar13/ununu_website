@@ -314,9 +314,6 @@
 			top: -0.25em;
 		}
 
-		h2 + p {
-		}
-
 		h3 + p {
 			font-size: 1.1em;
 		}
@@ -403,8 +400,8 @@
 		padding: 0.75em 1em;
 	}
 
-	input[type="checkbox"],
-	input[type="radio"], {
+	input[type="checkbox"]
+	{
 		@include vendor('appearance', 'none');
 		display: block;
 		float: left;
@@ -1033,8 +1030,8 @@
 				}
 			}
 
-			input[type="checkbox"],
-			input[type="radio"], {
+			input[type="checkbox"]
+			{
 				& + label {
 					color: _palette($p, fg);
 
@@ -1259,7 +1256,6 @@
 			position: absolute;
 			right: 0;
 			top: 0;
-			vertical-align: middle;
 			width: 7em;
 		}
 
