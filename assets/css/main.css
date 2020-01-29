@@ -2566,7 +2566,7 @@ input, select, textarea {
 					max-width: none;
 					text-align: center;
 					width: 100%;
-					height:50vh;
+					height:90vh;
 				}
 
 		}
@@ -2580,10 +2580,11 @@ input, select, textarea {
 		@media screen and (max-width: 460px) {
 
 			.subsection .image {
-				height:50vh;
+				height:30vh;
 			}
 			.subsection .image img{
-				height:50vh;
+				height:30vh;
+				width:100%;
 			}
 			.subsection .content{
 				height:80vh;
@@ -2936,7 +2937,7 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease; */
 			display: inline-block;
-			font-size: 9em;
+			font-size: 5em;
 			vertical-align: center;
 			opacity: 1;
 			padding: 0.35em 1em;
@@ -2980,6 +2981,7 @@ input, select, textarea {
 			text-transform: lowercase;
 			margin-top:-4em;
 			color:#A3C4CB;
+			font-size:0.55em;
 		}
 		#hero .more {
 			-moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;
