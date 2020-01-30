@@ -129,18 +129,26 @@
                             <a href="mailto:matters@ununu.io" class="button fit">Demo</a>
                         </li>
                         <li>
-                            <a href="https://us4.admin.mailchimp.com/campaigns/#t:campaigns-list" class="button fit">Follow</a>
+                            <button onclick="subscribe()" class="button fit">Follow</button>
+                                <div id="mc_embed_signup">
+                                    <form action="https://ununu.us4.list-manage.com/subscribe/post?u=9d4aec70093a5f7fd4618280c&amp;id=e584d71993" method="post" id="mc-embedded-subscribe-form form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                        <div id="mc_embed_signup_scroll">
+	                                        <input type="email" value="" name="EMAIL" class="email fit" id="mce-EMAIL" placeholder="email address" required>
+                                            <div style="display:none"><input type="text" name="b_9d4aec70093a5f7fd4618280c_e584d71993" tabindex="-1" value=""></div>
+                                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button fit"></div>
+                                        </div>
+                                     </form>
+                                </div>
                         </li>
                     </ul>
                 </div>
             </section>
 
             <footer id="footer" style="background-color:#000000">
-			<span>&copy;
-                <a href="#">ununu</a>
-                 - All Rights Reserved. 
-                <a href="assets/doc/Imprint.pdf">Imprint</a>. 
-                <a href="assets/doc/Privacy Policy.pdf">Privacy Policy</a>.
+			<span>
+                <!-- <a href="#">ununu</a>  -->
+                <a href="assets/doc/Imprint.pdf">Imprint/Impressum</a>. 
+                <a href="assets/doc/Privacy Policy.pdf">Privacy Policy/Datenschutzerklärung</a>.
                 
             </span>
             </footer>
@@ -149,9 +157,22 @@
         <!-- Scripts -->
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>
+              function subscribe() {
+                var subs = document.getElementById('mc_embed_signup');
+                var displaySetting = subs.style.display;
+                if (displaySetting == 'flex') {
+                    subs.style.display = 'none';
+                }
+                else {
+                subs.style.display = 'flex';
+                }
+            }
+        </script>
 
     </body>
 </html>
