@@ -2460,7 +2460,6 @@ input, select, textarea {
 			-ms-order: 1;
 			order: 1; */
 			border-radius: 0;
-			width: 50vw;
 			text-align:center;
 			padding-left:10vw;
 			padding-right:10vw;
