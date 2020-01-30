@@ -2447,37 +2447,45 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		padding-left:10vw;
+		padding-right:10vw;
+		padding-top:0;
+		padding-bottom:5vw;
+		margin:0;
 	}
 
 		.subsection .image {
-			-moz-order: 1;
+			/* -moz-order: 1;
 			-webkit-order: 1;
 			-ms-order: 1;
-			order: 1;
+			order: 1; */
 			border-radius: 0;
 			width: 50vw;
-			height:100vh;
 			text-align:center;
-			padding:10vw;
+			padding-left:10vw;
+			padding-right:10vw;
+			padding-top:0;
 		}
 
 			.subsection .image img {
 				border-radius: 0;
-				width: 25vw;
-				height:25vw;
+				width: 20vw;
+				height:20vw;
 				size:cover;
 				object-fit: cover;
 				opacity:0.6;
+				padding-left:-5vw;
 			}
 
 		.subsection .content {
-			padding: 2em 4em 0.1em 4em ;
+			padding: 4em 4em 4em 4em ;
 			-moz-order: 2;
 			-webkit-order: 2;
 			-ms-order: 2;
 			order: 2;
 			max-width: 48em;
 			width: 60%;
+			text-align: justify;
 		}
 		.subsection .content h2
 		{
@@ -2543,6 +2551,11 @@ input, select, textarea {
 
 			.subsection .content {
 				width: 55%;
+				padding:0;
+			}
+			.subsection
+			{
+				padding:0;
 			}
 
 		}
